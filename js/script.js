@@ -8,6 +8,9 @@
         }
     }
     headerButton.addEventListener("click", toggleNav);
+    document.querySelectorAll(".menu__link").forEach(function (element) {
+        element.addEventListener("click", toggleNav);
+    })
 })();
 
 (function () {
