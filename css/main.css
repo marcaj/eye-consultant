@@ -35,6 +35,7 @@ body {
     text-align: center;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     color: white;
+    z-index: 1;
 }
 
 .header__button {
@@ -106,9 +107,55 @@ body {
 .top {
     background-image: url(../images/bg.jpg);
     background-size: cover;
-    height: 300px;
+    height: 100vh;
+    padding-top: 4em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
 }
 
+.top__jambo {
+    font-size: 3em;
+    letter-spacing: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.top__title {
+    text-transform: uppercase;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.top__title::before,
+.top__title::after {
+    content: "";
+    position: absolute;
+    width: 6em;
+    height: 1em;
+    bottom: 0.5em;
+    border-bottom: 4px double black;
+    box-sizing: border-box;
+}
+
+.top__title::before {
+    left: -7.5em;
+}
+
+.top__title::after {
+    right: -7.5em;
+}
+
+.top__hero {
+    margin: 1em;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 0;
+}
 
 /*!
  * Hamburgers
