@@ -1,0 +1,53 @@
+.top {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 4em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.top__jambo {
+    font-size: 3em;
+    letter-spacing: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.top__title {
+    text-transform: uppercase;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 6em;
+        height: 1em;
+        bottom: 0.5em;
+        border-bottom: 4px double black;
+        box-sizing: border-box;
+    }
+    
+    &::before {
+        left: -7.5em;
+    }
+
+    &::after {
+        right: -7.5em;
+    }        
+}
+
+.top__hero {
+    margin: 1em;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 0;
+}
