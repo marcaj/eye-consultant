@@ -1,0 +1,23 @@
+.scroll-top {
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 1em;
+    bottom: -4em;
+    transition: bottom 0.2s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 -3px 0 0 rgba(24, 24, 24, 0.15) inset, 0 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &--show {
+        bottom: 1em;
+    }
+}
