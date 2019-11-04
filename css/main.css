@@ -190,9 +190,10 @@ body {
 .box {
     font-size: 1rem;
     border: 1px solid #eeeeee;
-    height: 7em;
+    height: 10em;
     width: 20em;
     display: inline-flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -200,6 +201,10 @@ body {
     margin: 0.5em;
     transform: translate3d(0, 0, 0);
     animation: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.1s 1 normal both running scale-up-center;
+}
+
+.box__text {
+    margin-top: 1.2em;
 }
 
 .contact {
