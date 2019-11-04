@@ -48,7 +48,7 @@ module.exports = {
           ]
         },
         {
-          test: /\.html$/,
+          test: /\.(html|webmanifest|ico)$/,
           use: [
             {
               loader: 'file-loader',
