@@ -1,0 +1,51 @@
+.card {
+    max-width: 20em;
+    margin: 0 auto 2em;
+    box-shadow: 0 2px 20px rgba(0,0,0,.2);
+    padding: 1em 2em;
+    display: flex;
+    flex-flow: column;
+    background-image: url("../images/img-people-01.jpg");
+    background-position: center top;
+    background-size: cover;
+    transform: translate3d(0, 0, 0);
+    animation: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.1s 1 normal both running scale-up-center;
+}
+
+.card__description {
+    margin-top: 20em;
+    text-transform: uppercase;
+    position: relative;
+    left: 3em;
+    font-size: 0.8em;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 2.5em;
+        height: 0.8em;
+        bottom: 0.55em;
+        border-bottom: 4px double var(--accent-color);
+        box-sizing: border-box;
+        left: -3em;
+    }
+}
+
+.card__title {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0.2em 0;
+}
+
+.card__action {
+    margin-top: 1em;
+    color: var(--accent-color);
+    text-decoration: none;
+    letter-spacing: 0;
+    transition: 300ms ease all;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
