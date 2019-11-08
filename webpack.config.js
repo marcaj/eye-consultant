@@ -30,7 +30,7 @@ module.exports = {
               options: {
                 limit: 10000,
                 outputPath: '/images/',
-                name: '[name].kick.[hash:8].[ext]',
+                name: '[name].[ext]',
               },
             },
           ],
